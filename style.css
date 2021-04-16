@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 1024px;
+    max-width: 1440px;
+    margin: 0 auto;
+    /* margin-top: calc(50vh);
+    transform: translateY(-50%); */
+    background-image: url(images/bg-desktop.svg);
+    background-color: hsl(257, 40%, 49%);
+    font-family: "Open Sans", sans-serif;
+    color: white;
+}
+
+/**********Section logo*************/
+.logo {
+    padding: 3vh 50px;
+    flex-grow: 1;
+}
+
+.logo img {
+    max-width: 100%;
+}
+
+/**********Section main*************/
+
+.main {
+    height: 60%;
+    display: flex;
+    flex-grow: 1;
+}
+
+.main .image {
+    padding: 5vh 50px;
+}
+
+.main img {
+    max-width: 100%;
+}
+
+.main .description {
+    width: 50%;
+    padding: 5vh 5vw;
+}
+
+.description h2 {
+    font-size: 35px;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+.description p {
+    padding: 5% 0;
+    line-height: 130%;
+    font-size: 20px;
+}
+
+.description button {
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 20px;
+    border: none;
+    background-color: white;
+    color: hsl(257, 40%, 49%);
+}
+
+/**********Section Social*************/
+
+.social {
+    flex-grow: 1;
+    padding: 3vh 50px;
+}
+
+.social .icon {
+    float: right;
+    height: 40px;
+    width: 40px;
+    margin: 0 15px;
+    border: 2px solid white;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.social .icon i {
+    font-size: 20px;
+    line-height: 40px;
+}
+
+/**********footer*************/
+
+.attribution {
+    height: 40px;
+    font-size: 11px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.attribution a {
+    color: black;
+}
+
+@media (max-width:1024px) {
+    .main .image {
+        width: 55%;
+    }
+
+    .main .description {
+        width: 45%;
+        padding: 2vh 2vw;
+    }
+}
+
+@media (max-width:768px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .main .image {
+        width: 80%;
+        padding: 0 5vw;
+        margin: 0 auto;
+    }
+
+    .main .description {
+        text-align: center;
+        width: 100%;
+        padding: 0 5vw;
+    }
+
+    .social {
+        margin: 0 auto;
+    }
+
+    .attribution {
+        display: none
+    }
+}
+
+@media (max-height:1024px) {
+    .wrapper {
+        min-height: 100vh;
+    }
+}
