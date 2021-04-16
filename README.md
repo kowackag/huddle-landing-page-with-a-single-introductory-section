@@ -25,8 +25,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/kowackag/huddle-landing-page-with-a-single-introductory-section.git)
+- Live Site URL: [Add live site URL here](https://kowackag.github.io/huddle-landing-page-with-a-single-introductory-section/)
 
 ## My process
 
